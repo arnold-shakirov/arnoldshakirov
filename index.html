@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arnold Shakirov — Digital Artist & Designer</title>
+  <meta name="description"
+    content="Digital artist with podcast production and social-media marketing experience — 2D/3D visuals, motion graphics, and interactive work that drive clear storytelling and engagement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container row between">
+      <a class="brand" href="#top">AS</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#fiea">FIEA</a>
+        <a href="#experience">Experience</a>
+        <a href="#connect">Connect</a>
+      </nav>
+      <button id="theme-toggle" class="btn badge" aria-label="Toggle theme" title="Toggle theme">Light</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ABOUT / HERO -->
+    <section class="hero" id="about">
+      <div class="container row">
+        <div class="about-photo" style="flex:1;display:flex;justify-content:center;align-items:center;">
+          <img class="portrait" src="assets/image.png" alt="Arnold Shakirov portrait"
+            style="border-radius:50%;width:300px;height:300px;object-fit:cover;">
+        </div>
+        <div class="about-text" style="flex:2;text-align:left;">
+          <h1 class="display" style="font-size:2.5rem;font-weight:800;margin:0;">Arnold Shakirov</h1>
+          <h2 style="font-size:1.5rem;font-weight:400;margin:8px 0;">Digital Artist & Designer</h2>
+          <p class="lede" style="margin:16px 0;text-align:left;">
+            Digital artist with <span class="highlight">podcast production</span> and <span
+              class="highlight">social-media marketing</span> experience —
+            <span class="highlight">2D/3D visuals</span>, <span class="highlight">motion graphics</span>, and <span
+              class="highlight">interactive work</span>
+            that drive clear storytelling and engagement. <span class="highlight">Digital Arts & Computer Science</span>
+            major — <span class="highlight">Stetson University</span>.
+          </p>
+          <div class="row" style="gap:16px;margin-top:16px;justify-content:flex-start;">
+            <a class="btn" style="padding:16px 28px;font-size:1.2rem;font-weight:600;"
+              href="assets/Arnold_Shakirov_Resume_Digital_Artist.pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="btn" style="padding:16px 28px;font-size:1.2rem;font-weight:600;" href="#work">View Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK (ORDERED) -->
+    <section id="work" class="section" style="padding-top:24px;">
+      <div class="container">
+        <div class="row between align-end">
+          <h2>Selected Work</h2>
+          <div class="filters">
+            <button class="pill active" data-filter="all">All</button>
+            <button class="pill" data-filter="2D">2D</button>
+            <button class="pill" data-filter="3D">3D</button>
+            <button class="pill" data-filter="Rigging">Rigging</button>
+            <button class="pill" data-filter="Talk">Talk</button>
+            <button class="pill" data-filter="Research">Research</button>
+            <button class="pill" data-filter="Design">Design</button>
+          </div>
+        </div>
+
+        <div id="grid" class="grid">
+          <!-- 1) Elizabeth Hall — 3D Walkthrough -->
+          <a class='card' data-cat='3D/VR 3D' href='https://youtu.be/9fhRAwqX8vg' target='_blank' rel='noopener'>
+            <div class='thumb'><img src='assets/hacker.png' alt='Elizabeth Hall — 3D Walkthrough cover'></div>
+            <div class='meta'>
+              <h3>Elizabeth Hall — 3D Walkthrough</h3>
+              <p class='muted'>2025</p>
+              <p class='desc'>VR-style walkthrough of the winter reimagining.</p>
+            </div>
+          </a>
+
+          <!-- 2) Elizabeth Hall — Artist Talk -->
+          <a class='card' data-cat='Talk' href='https://youtu.be/z_q0xC0ronM' target='_blank' rel='noopener'>
+            <div class='thumb'><img src='assets/talk.png' alt='Elizabeth Hall — Artist Talk cover'></div>
+            <div class='meta'>
+              <h3>Elizabeth Hall — Talk</h3>
+              <p class='muted'>2025</p>
+              <p class='desc'>Artist talk on the process behind Elizabeth Hall 3D.</p>
+            </div>
+          </a>
+
+          <!-- 3) The Outsider -->
+          <a class='card' data-cat='Animation 2D' href='https://youtu.be/yRXDwCsSH9o' target='_blank' rel='noopener'>
+            <div class='thumb'><img src='assets/outsider.webp' alt='The Outsider: 2D Animation cover'></div>
+            <div class='meta'>
+              <h3>The Outsider: 2D Animation</h3>
+              <p class='muted'>2025 • 1:03</p>
+              <p class='desc'>Short narrative about escapism and derealization.</p>
+            </div>
+          </a>
+
+          <!-- 4) Mr. Wolf -->
+          <a class='card' data-cat='Animation 2D' href='https://youtu.be/p9U_2Y-rkqU' target='_blank' rel='noopener'>
+            <div class='thumb'><img src='assets/mr-wolf.webp' alt='Mr. Wolf: 2D Animation cover'></div>
+            <div class='meta'>
+              <h3>Mr. Wolf: 2D Animation</h3>
+              <p class='muted'>2025 • 0:39</p>
+              <p class='desc'>Character piece exploring tension and timing.</p>
+            </div>
+          </a>
+
+          <!-- 5) Crossover — Research -->
+          <a class='card' data-cat='Research' href='https://youtu.be/2QdceSH_YjA' target='_blank' rel='noopener'>
+            <div class='thumb'><img src='assets/crossover.png' alt='Crossover — Research cover'></div>
+            <div class='meta'>
+              <h3>Crossover — Research</h3>
+              <p class='muted'>2025</p>
+              <p class='desc'>Unity puzzle-adventure with dual‑character, dimension‑shifting mechanics.</p>
+            </div>
+          </a>
+
+          <!-- 6) Reporter Magazine (PDF) -->
+          <a class="card" data-cat="Design Publication" href="assets/issuu_output.pdf" target="_blank" rel="noopener">
+            <div class="thumb"><img src="assets/cover.png" alt="Reporter — Magazine Spread cover"></div>
+            <div class="meta">
+              <h3>Reporter — Magazine Spread</h3>
+              <p class="muted">Design • Publication (Stetson University)</p>
+              <p class="desc">Page Designer — selected layouts and pages (PDF).</p>
+            </div>
+          </a>
+
+          <!-- 6b) Reporter Magazine #2 (PDF) -->
+          <a class="card" data-cat="Design Publication" href="assets/EditableMagazine2.pdf" target="_blank"
+            rel="noopener">
+            <div class="thumb"><img src="assets/mag2.png" alt="Reporter — Magazine Spread #2 cover"></div>
+            <div class="meta">
+              <h3>Reporter — Magazine Spread #2</h3>
+              <p class="muted">Design • Publication (Stetson University)</p>
+              <p class="desc">Page Designer — second issue layouts (PDF).</p>
+            </div>
+          </a>
+
+          <!-- 7) Rigging the Deer -->
+          <a class='card' data-cat='Rigging 3D' href='https://youtu.be/WN8J0t2GPps' target='_blank' rel='noopener'>
+            <div class='thumb'><img src='assets/rig.png' alt='Rigging the Deer cover'></div>
+            <div class='meta'>
+              <h3>Rigging the Deer (3D)</h3>
+              <p class='muted'>2024</p>
+              <p class='desc'>Rigging demo for a stylized deer character in 3D.</p>
+            </div>
+          </a>
+
+          <!-- 8) 2D Class Animation (LAST) -->
+          <a class='card' data-cat='Animation 2D' href='https://youtu.be/1gGd6D6ro48' target='_blank' rel='noopener'>
+            <div class='thumb'><img src='assets/cover2d.png' alt='2D Class Animation cover'></div>
+            <div class='meta'>
+              <h3>2D Class Animation</h3>
+              <p class='muted'>2024</p>
+              <p class='desc'>Course project exploring staging and timing.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIEA -->
+    <section id="fiea" class="section alt">
+      <div class="container">
+        <h2>FIEA — Crossover (Research)</h2>
+        <p class="muted">Unity puzzle‑adventure integrating a dual‑character, dimension‑shifting mechanic with narrative
+          progression.</p>
+        <div class="grid videos">
+          <div class='video-card'>
+            <div class='thumb iframe'><iframe loading='lazy' src='https://www.youtube.com/embed/2QdceSH_YjA'
+                title='Crossover — Dev Update #1' frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen></iframe></div>
+            <div class='meta'>
+              <h3>Crossover — Dev Update #1</h3>
+            </div>
+          </div>
+          <div class='video-card'>
+            <div class='thumb iframe'><iframe loading='lazy' src='https://www.youtube.com/embed/O09-mxOlh7c'
+                title='Crossover — Dev Update #2' frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen></iframe></div>
+            <div class='meta'>
+              <h3>Crossover — Dev Update #2</h3>
+            </div>
+          </div>
+          <div class='video-card'>
+            <div class='thumb iframe'><iframe loading='lazy' src='https://www.youtube.com/embed/Bka7Xkk0Yq8'
+                title='Crossover — Dev Update #3' frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen></iframe></div>
+            <div class='meta'>
+              <h3>Crossover — Dev Update #3</h3>
+            </div>
+          </div>
+        </div>
+        <p style='margin-top:12px'><a class='btn' href='assets/FIEA_Research_Proposal.pdf' target='_blank'
+            rel='noopener'>Research Proposal (PDF)</a></p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (unchanged content) -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="xp-grid">
+          <article class="xp-card">
+            <header class="xp-head">
+              <img class="xp-logo" src="assets/download.png" alt="Phoenix Generation logo"
+                style="object-fit:contain;width:40px;height:40px;">
+              <h3>Podcast Production & Multimedia Intern — Phoenix Generation</h3>
+            </header>
+            <ul class="xp-list">
+              <li>Produced 7+ podcast & interview episodes with detailed release plans.</li>
+              <li>Managed event photography and created social assets (Lightroom).</li>
+              <li>Edited audio (Audition, Logic) and built branded video packages (Premiere, After Effects) for
+                productions including Courageous Conversations.</li>
+              <li>Coordinated recording schedules, gear prep, and guest/host communication.</li>
+            </ul>
+            <p class="xp-link"><a href="https://www.phoenixgeneration.org/" target="_blank"
+                rel="noopener">phoenixgeneration.org</a></p>
+          </article>
+
+          <article class="xp-card">
+            <header class="xp-head">
+              <img class="xp-logo" src="assets/Stetson_Hatters_current_logo.svg.png" alt="Stetson logo"
+                style="object-fit:contain;width:40px;height:40px;">
+              <h3>Computer Science Tutor — STETSON UNIVERSITY</h3>
+            </header>
+            <ul class="xp-list">
+              <li>Improved Academic Outcomes: Mentored 30+ students, leading to a 33% average increase in their
+                assignments and exam scores by simplifying complex concepts in analyzing the algorithms, software
+                development, and operating systems.</li>
+              <li>Developed customized programming assignments using Python, Java, and C++, enhancing students'
+                practical coding skills.</li>
+            </ul>
+          </article>
+
+          <article class="xp-card">
+            <header class="xp-head">
+              <img class="xp-logo" src="assets/Stetson_Hatters_current_logo.svg.png" alt="Stetson logo"
+                style="object-fit:contain;width:40px;height:40px;">
+              <h3>Russian Language Tutor — STETSON UNIVERSITY</h3>
+            </header>
+            <ul class="xp-list">
+              <li>Improved Academic Outcomes: Mentored 20+ students, leading to an increase in their assignments and
+                exam scores by simplifying complex concepts in analyzing the algorithms, software development, and
+                operating systems.</li>
+              <li>Student Engagement: Organized weekly language practice events, providing opportunities for students to
+                speak Russian in a supportive environment.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect" class="section contact">
+      <div class="container contact-wrap">
+        <div class="contact-left">
+          <h2>Let’s work together</h2>
+          <form id="contact-form" class="contact-form cardish" action="https://formspree.io/f/xvgqddgp" method="POST"
+            novalidate>
+            <div class="form-row">
+              <label class="form-label" for="name">Your name</label>
+              <input class="input" type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="_replyto">Your email</label>
+              <input class="input" type="email" id="_replyto" name="_replyto" placeholder="you@example.com" required>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="textarea" id="message" name="message" rows="6" placeholder="Write your message here..."
+                required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New portfolio message">
+            <input type="text" name="_gotcha" style="display:none">
+            <button id="contact-submit" class="btn btn-wide" type="submit">Send Message</button>
+            <p id="form-feedback" class="muted" style="margin-top:10px;"></p>
+          </form>
+        </div>
+
+        <aside class="contact-right cardish">
+          <h3>Connect</h3>
+          <div class="icons">
+            <a class="icon-link" href="https://www.linkedin.com/in/arnold-shakirov/" target="_blank" rel="noopener">
+              <img src="assets/linkedin.png" alt="LinkedIn" class="icon-img"><span>LinkedIn</span>
+            </a>
+            <a class="icon-link" href="https://github.com/arnold-shakirov" target="_blank" rel="noopener">
+              <img src="assets/git.png" alt="GitHub" class="icon-img"><span>GitHub</span>
+            </a>
+            <a class="icon-link" href="https://www.youtube.com/@Updatespipeline" target="_blank" rel="noopener">
+              <img src="assets/yiutube.png" alt="YouTube" class="icon-img"><span>YouTube</span>
+            </a>
+            <a class="icon-link" href="mailto:arnold.shakirov@gmail.com">
+              <img src="assets/email2.png" alt="Email" class="icon-img"><span>Email</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row between wrap">
+      <div>© 2025 Arnold Shakirov · Digital Artist</div>
+      <div class="foot-links"><a href="#top">Back to top</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
