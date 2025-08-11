@@ -1,4 +1,33 @@
 // ----------------------
+// Mobile nav toggle
+// ----------------------
+(() => {
+  const btn = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('primary-nav');
+  if (!btn || !menu) return;
+
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    menu.style.display = open ? 'none' : 'block';
+  });
+
+  // Close on link click (mobile)
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.setAttribute('aria-expanded', 'false');
+      menu.style.display = 'none';
+    });
+  });
+
+  // Ensure desktop layout shows menu
+  const mq = window.matchMedia('(min-width: 900px)');
+  const sync = () => { menu.style.display = mq.matches ? 'flex' : 'none'; };
+  mq.addEventListener('change', sync);
+  sync();
+})();
+
+// ----------------------
 // Filtering (Work grid)
 // ----------------------
 (() => {
@@ -22,8 +51,7 @@
 
 // -------------------------------------------
 // Contact form -> Formspree (automatic email)
-// Formats as: "<name> tries to connect... <message>"
-// Uses _replyto for sender email (Reply-To)
+// Formats: "<name> tries to connect ... <message>"
 // -------------------------------------------
 (() => {
   const form = document.getElementById('contact-form');
@@ -89,13 +117,11 @@
 // ----------------------
 (() => {
   const html = document.documentElement;
-  const btn = document.getElementById('theme-toggle');
+  const btn  = document.getElementById('theme-toggle');
   if (!btn) return;
 
-  // Default to LIGHT if there is no saved preference
-  const saved = localStorage.getItem('theme');
-  const initial = saved ? saved : 'light';
-
+  const saved = localStorage.getItem('theme');         // 'light' or 'dark'
+  const initial = saved ? saved : 'light';             // default to light
   html.setAttribute('data-theme', initial);
   btn.textContent = initial === 'dark' ? 'Light' : 'Dark';
 
